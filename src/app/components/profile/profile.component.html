@@ -1,0 +1,26 @@
+<!-- Interpolation binding -->
+<div>
+    <div>
+      <label>Name:</label>
+      <span>{{ Profile.name }}</span>
+    </div>
+    <div>
+      <label>Age:</label>
+      <span>{{ Profile.age }}</span>
+    </div>
+    <div>
+      <label>Email:</label>
+      <span>{{ Profile.email }}</span>
+    </div>
+  </div>
+
+<!-- two way binding -->
+  <div>
+    <label for="Address">Enter your Address:</label>
+    <input type="text" id="Address" [(ngModel)]="Address" name="Address">
+  </div>
+  
+  <p class="address">Your Address: {{ Address }}</p>
+
+
+  
