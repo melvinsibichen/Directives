@@ -5,6 +5,7 @@ import { AboutComponent } from './components/about/about.component';
 import { ContactComponent } from './components/contact/contact.component';
 import { ProfileComponent } from './components/profile/profile.component';
 import { NotfounderrorComponent } from './components/notfounderror/notfounderror.component';
+import { EmployeeComponent } from './components/employee/employee.component';
 
 const routes: Routes = [
   {
@@ -25,9 +26,13 @@ const routes: Routes = [
     component: ContactComponent
   },
   {
+    path:'employees',
+    component:EmployeeComponent
+  },
+  {
     path:'profile',
     component:ProfileComponent
-  },
+  },  
   {
     path: '**',
     component: NotfounderrorComponent
