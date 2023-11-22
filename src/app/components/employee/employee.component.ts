@@ -122,4 +122,19 @@ export class EmployeeComponent {
      
     ]
   };
+
+  // initially showvalue setting as false not displaying table
+  showTable = false; 
+
+// changing the booleanvalue onclick using tooglefnctn
+  toggleTable() {
+    this.showTable = !this.showTable;
+  }
+
+  applyStyles = false;
+  changeStyles = false;
+  toggleTableStyles() {
+    this.applyStyles = !this.applyStyles;
+    this.changeStyles = true; // Set changeStyles to true when styles are changed
+  }
 }

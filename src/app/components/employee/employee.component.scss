@@ -1,0 +1,77 @@
+
+
+/* Default table styles */
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  .table th, .table td {
+    padding: 12px; /* Increased padding for better readability */
+    border: 1px solid #ddd;
+    text-align: center; /* Center text in cells */
+  }
+  
+  /* Table header styles */
+  .table th {
+    background-color: #3498db; /* Header background color */
+    color: #fff; /* Header text color */
+  }
+  
+  /* Alternate row background color */
+  .table tbody tr:nth-child(even) {
+    background-color: #f2f2f2; 
+    /* Lighter alternate row color */
+  }
+  
+  /* Hover effect for rows */
+  .table tbody tr:hover {
+    background-color: #e0e0e0;
+  }
+  
+  /* Styled table class for applying additional styles when clicking the change style button*/
+  .styled-table {
+    border: 2px solid #3498db;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    
+  }
+  
+  /* Button styles */
+  button {
+    margin: 5px;
+    padding: 10px 16px; /* Increased padding for better button appearance */
+    font-size: 16px; /* Larger font size for buttons */
+    cursor: pointer;
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+  }
+  
+  /* Button hover effect */
+  button:hover {
+    background-color: #2077b4; /* Darker color on hover */
+  }
+
+
+
+  .changeStyles .table {
+  border: 2px solid #ff6347; /* Change border color to red */
+  box-shadow: 0 0 10px rgba(255, 99, 71, 0.5); /* Change box-shadow to a red shade */
+}
+
+.changeStyles .styled-table {
+  border: 2px solid #ff6347; /* Change border color to red */
+  box-shadow: 0 0 10px rgba(255, 99, 71, 0.5); /* Change box-shadow to a red shade */
+}
+
+/* Reset changeStyles to false after applying styles to prevent continuous styling */
+:not(.changeStyles) .table,
+:not(.changeStyles) .styled-table {
+  border: 1px solid #ddd;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+  
